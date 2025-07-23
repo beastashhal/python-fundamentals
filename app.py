@@ -10,5 +10,5 @@ print(name + ' likes ' + color)
 #Data Types
 full_name = 'Ashhal' #String
 age = 19 #Integer
-merit_score = 91.15 #Flow
+merit_score = 91.15 #Float
 ned_admission = True
