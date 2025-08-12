@@ -1,14 +1,21 @@
-#Basic
-print("Hello world")
+count = 0
+max_attempts = 3
+number = 7
 
-#Input Variables
+while count < max_attempts :
+    guess = input("Guess a number between 1 and 10: ")
+    count += 1
+    if guess.isdigit() :
+        guess = int(guess)
 
-name = input('What is your name? ')
-color = input ('What is your favourite color? ')
-print(name + ' likes ' + color)
-
-#Data Types
-full_name = 'Ashhal' #String
-age = 19 #Integer
-merit_score = 91.15 #Float
-ned_admission = True
+        if guess == number :
+            print("Congratulations, you guessed the number!")
+            break
+        elif guess > number :
+            print("Too high, you guessed the number!")
+        else:
+            print("Too low, you guessed the number!")
+    else:
+        print("Invalid input!")
+else:
+    print("You can't guess the number!,The number was:" , number)
